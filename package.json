@@ -1,0 +1,22 @@
+{
+  "name": "fusion-search",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vsme/fusion-search"
+  },
+  "author": "Yaavi",
+  "scripts": {
+    "convert": "ts-node scripts/convert-pinyin.ts",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.2"
+  }
+}
