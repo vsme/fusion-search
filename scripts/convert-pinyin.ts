@@ -25,7 +25,7 @@ Object.keys(dict).forEach(key => {
   const char = String.fromCodePoint(numberKey);
 
   // 检查是否是中文字符
-  if (/[\u4e00-\u9FFF]/.test(char) && typeof value === 'string') {
+  if (/[\u4e00-\u9fff]/.test(char) && typeof value === 'string') {
     const pinyins = [...new Set(value.split(',').map((p) => stripTones(p)))];
     pinyinMap[char] = pinyins;
   }
